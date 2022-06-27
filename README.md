@@ -1,10 +1,19 @@
+Instructions to run the api
+
 composer install
+
 run mysql with xampp
+
 create 2 database: levo and levo-test
+
 php artisan migrate
+
 php artisan db:seed
+
 php artisan --env=testing migrate
+
 php artisan schedule:work
+
 php artisan queue:work
 
 To send email is necesary use mailtrap.io and select laravel configuration
