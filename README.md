@@ -46,4 +46,10 @@ Add in config/database.php
 
 Finally, run the test:
 
-php artisan test.
+php artisan test
+
+*To see the alert that is sent to the administrator with the transactions of the last 48 hours, use a Task Scheduling together with a job to send the email. That is why it is necessary to run the following instructions:
+
+php artisan schedule:work
+
+php artisan queue:work
